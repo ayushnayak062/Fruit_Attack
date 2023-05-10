@@ -2823,19 +2823,22 @@ MonoBehaviour:
   timerText: {fileID: 2054665703}
   livesText: {fileID: 379984406}
   mode: 1
-  gameDuration: 30
+  gameDuration: 130
   gameOverSceneName: GameOver
   gameWinSceneName: WinGame
   gameWinEndlessName: WinGameEndless
   highScore: 0
   timeRemaining: 0
-  lives: 4
+  lives: 3
   isShieldActive: 0
   totalScore: 0
   scoreMultiplierDuration: 10
   scoreMultiplierValue: 2
   nextSceneLoad: 0
   transition: {fileID: 1794574874}
+  gamemanagerAudio: {fileID: 0}
+  gameOverAudio: {fileID: 0}
+  gamewinAudio: {fileID: 0}
 --- !u!1 &1088618919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,7 +3267,7 @@ MonoBehaviour:
   scorePerFruit: 10
   lifeDecreasePerUnwantedItem: 1
   comboResetTime: 2
-  requiedFruits: 5
+  requiedFruits: 15
   comboText: {fileID: 416270233}
   requiredFruitsText: {fileID: 525764819}
   collectedFruitText: {fileID: 230370030}

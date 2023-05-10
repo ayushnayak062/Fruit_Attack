@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             Debug.Log("You Completed ALL Levels");
 
