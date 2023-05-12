@@ -10,14 +10,19 @@ public class LevelSelection : MonoBehaviour
 
     void Start()
     {
-        int levelAt = PlayerPrefs.GetInt("levelReached", 1);
+        int levelAt = PlayerPrefs.GetInt("levelReachedFestival", 1);
         for (int i = 0; i < lvlButtons.Length; i++)
         {
             if (i + 1 > levelAt)
                 lvlButtons[i].interactable = false;
         }
+        int levelAtc = PlayerPrefs.GetInt("levelReachedCreamPie", 1);
+        for (int i = 0; i < lvlButtons.Length; i++)
+        {
+            if (i + 1 > levelAtc)
+                lvlButtons[i].interactable = false;
+        }
     }
-    
 
 }
 

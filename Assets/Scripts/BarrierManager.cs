@@ -33,11 +33,9 @@ public class BarrierManager : MonoBehaviour
             case "Pear":
                 if (!GameManager.Instance.isShieldActive)
                 {
-                    if(GameManager.Instance.mode == 1)
-                    {
                        // Add score for collecting a fruit
                        GameManager.Instance.DecreaseLife(lifetoDecrease);
-                    }
+                    
 
                     // Destroy the collected fruit
                     Destroy(collision.gameObject);

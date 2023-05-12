@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         UpdateScoreText();
         UpdateHighScoreText();
         UpdateLivesText();
-        if (SceneManager.GetActiveScene().name != "EndlessMode")
+        if (mode == 1)
         {
           UpdateTimerText();
           StartCoroutine(StartGameTimer());
@@ -81,18 +81,21 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 9)
+        if (SceneManager.GetActiveScene().buildIndex == 9||SceneManager.GetActiveScene().buildIndex == 22)
         {
             Debug.Log("You Completed ALL Levels");
 
         }
-        else
+        else if(mode == 1)
         {
-            PlayerPrefs.SetInt("levelReached",nextSceneLoad);
+            PlayerPrefs.SetInt("levelReachedFestival",nextSceneLoad);
             LoadWinGameScene();
-            
-
         }
+        else if(mode == 2)
+        {
+            PlayerPrefs.SetInt("levelReachedCreampie", nextSceneLoad);
+        }
+
     }
 
     public void DecreaseLife(int livesToDecrease)

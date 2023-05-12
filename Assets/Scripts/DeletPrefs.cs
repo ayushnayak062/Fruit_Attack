@@ -17,11 +17,12 @@ public class DeletPrefs : MonoBehaviour
     }
     public void OnClickReset()
     {
-        PlayerPrefs.DeleteKey("levelReached");
+        PlayerPrefs.DeleteKey("levelReachedFestival");
         Debug.Log("!");
     }
     public void OnclickResetHighScore()
     {
         PlayerPrefs.DeleteKey("Highscore");
+        PlayerPrefs.DeleteKey("levelReachedCreampie");
     }
 }
